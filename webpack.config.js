@@ -10,7 +10,7 @@ const genConfig = (outputFilename, { inlineCss, inputFilename = 'index.js' } = {
     libraryTarget: 'umd'
   },
   entry: {
-    entry: `./src/${inputName}`,
+    entry: `./src/${inputFilename}`,
   },
   target: 'web',
   externals: {
