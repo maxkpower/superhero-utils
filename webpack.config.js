@@ -2,7 +2,7 @@ const path = require('path');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 
-const genConfig = (outputFilename, { inlineCss, inputName = 'index.js' } = {}) => ({
+const genConfig = (outputFilename, { inlineCss, inputFilename = 'index.js' } = {}) => ({
   output: {
     path: path.resolve(__dirname, 'dist'),
     filename: outputFilename,
